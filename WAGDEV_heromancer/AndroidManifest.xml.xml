@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wagdev.heromancer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <!--theme 새로 생성, style참고-->
+        <activity android:name="com.wagdev.heromancer.Setting" android:theme="@style/Theme.MyDialog"/>
+        <activity android:name="com.wagdev.heromancer.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--        submain        -->
+        <activity android:name="com.wagdev.heromancer.SubMain"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.wagdev.heromancer.Store"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.wagdev.heromancer.battle"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.wagdev.heromancer.Tomb"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.wagdev.heromancer.Training"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.wagdev.heromancer.Manual"
+            android:theme="@style/Theme.MyDialog"
+            android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>
